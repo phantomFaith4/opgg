@@ -1,0 +1,57 @@
+.championSlot{
+    position:relative;
+    width: 250px;
+    height: auto;
+    opacity: 0.75;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+}
+.championSlot:hover{
+    opacity: 1;
+    transition: ease-in 0.3s ;
+}
+.championName, .championTitle{
+    position: absolute; 
+    top: calc(80% - 24px);
+    left: 0;
+    text-align: center; 
+    width: 100%; 
+    color: white;
+}
+.championTitle{
+    top: calc(90% - 16px);   
+}
+.championTitle::first-letter{
+    text-transform: uppercase;
+}
+.championImg{
+    border-radius: 20px;
+    object-fit:cover;
+    width:250px;
+    height: 380px;
+}
+.championType,.championDifficulty,.championRole{
+    position: absolute; 
+    top: calc(5% - 16px);
+    left: 15px;
+    text-align:left; 
+    width: 100%; 
+    color: white;
+}
+.championDifficulty{
+    left: 65px;
+    top:0;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+
+}
+.championRole{
+    left: 210px;
+}
+.championTypeImg{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 30px;
+    height: auto; 
+    object-fit: contain;
+}

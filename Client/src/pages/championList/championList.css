@@ -1,0 +1,147 @@
+body{
+    background-color: #F5F5F5;
+}
+.championsContainer{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 5fr); 
+    gap: 10px;
+}
+.filterContainer{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+}
+.championTypeDropdown{
+    width: 25px;
+    height: auto;
+}
+.dropbtn {
+    background-color: #F05454;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer; 
+    width: 250px;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #121212;
+}
+.dropbtn a{ 
+    color: inherit;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #F05454;
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid #121212;
+    border-top: 0;
+    width: 250px;
+}
+.dropdown-content div {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+}
+.dropdown-content div:hover {
+    background-color: #1B3058;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #1B3058;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0;
+}
+.d-inline{
+    float: left;
+    margin-left: 10px;
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+}
+.d-inline a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+}
+.searchContainer {
+    display: inline-flex;
+    flex: 1 1 300px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #F05454;
+    width: 250px;
+    height: 50px;
+}
+.searchIcon {
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+}
+.searchBox {
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+    background-color: #F05454;
+    font-size: 20px;
+    color: white;
+}
+.searchBox::placeholder{
+    color: white;
+}
+.searchChampionDifficulty{
+    display: inline-block;
+}
+.difficultyButton{
+    width: 50px;
+    height: 50px; 
+    background-color:#F05454;
+    cursor: pointer;
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+    border-left: 0;
+    border-right: 0;
+    font-size: 17px;
+}
+.difficultyButton:hover{
+    background-color: #1B3058;
+}
+.difficultyButton:first-child{
+    border-radius: 7px 0px 0px 7px;
+    border: 2px solid #121212;
+}
+.difficultyButton:last-child{
+    border-radius: 0px 7px 7px 0px;
+    border: 2px solid #121212;
+}
+.difficultyButton:nth-child(2){
+    border-right: 2px solid #121212;
+}
+.difficultyButton:nth-child(3){
+    border-right: 2px solid #121212;
+}
+.difficultyIcon{
+    color: white;
+}
+.searchChampionType{
+    display: flex;
+    justify-content: center;
+}
+.textContainer{
+    font-family: 'Work Sans', sans-serif;
+}
+.searchContainer{
+    border: 2px solid #121212;
+    border-radius: 10px 10px 10px 10px;
+}

@@ -1,0 +1,23 @@
+.matchHistorySlot{
+    border:2px solid red
+}
+.list {
+    background-color: yellow; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.list li {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.matchListParticipants{
+    border: 2px dotted olivedrab;
+    display: flex;
+    width: 400px;
+}
+.listContainer{
+    flex: 1;
+}

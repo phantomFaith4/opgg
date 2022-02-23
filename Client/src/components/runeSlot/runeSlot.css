@@ -1,0 +1,69 @@
+.runeSlot{
+    border: 2px solid black;
+    border-radius: 15px;
+    width:  100%;
+    height: 500px;
+    margin-top: 50px;
+}
+.leftRuneSide{
+    flex-grow:1;
+    align-self:auto;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.rightRuneSide{
+    flex-grow:1;
+    align-self:auto;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.runeDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+.runeImgMain{ 
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+.runeImg{
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    opacity: 1;
+} 
+.leftRuneTable{
+    width: 75%;
+}
+.rightRuneTable{
+}
+.runeTitleDiv{
+    font-size: 25px;
+}
+.runeTableData{
+   padding: 5px;
+}
+.runeTableData1{
+    padding: 25px;
+}
+.specialRune{
+    border: 2px solid black;
+    width: 150px;
+}
+.specialRuneTd{
+    border: 2px solid red;
+   
+}

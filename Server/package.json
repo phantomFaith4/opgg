@@ -1,0 +1,17 @@
+{
+  "name": "opgg-app",
+  "version": "1.0.0",
+  "description": "App works like op.gg or u.gg or some other apps like this for League of Legends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "phantomFaith4",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}

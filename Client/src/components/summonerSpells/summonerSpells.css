@@ -1,0 +1,54 @@
+.summonerSpells{
+    width: 400px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 55px;
+    background-color: #F05454;
+}
+.containerSpell {
+	max-width: 400px;
+	display: flex;
+    height: 165px;
+ 
+}
+.container__image{
+		width: 75px;
+        height: 75px;
+		align-self:center;
+        justify-content: center;
+        border-radius: 15px;
+        margin-left: 10px;
+}
+.container__text{
+    flex: 1 1 auto;
+}
+.spellTitle{
+   font-size: 20px;
+   text-align: left;
+   margin-top: 35px;
+   margin-bottom: 5px;
+   margin-left: 10px;
+   margin-right: 10px;
+   color: white;
+}
+.spellDesc{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.summonerSpellsSpan{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+.summonerSpellsWinrateSpan{
+    color: white;
+}
+.summonerSpellsWinrateNumSpan{
+    color: white;
+    font-size: 20px;
+}
