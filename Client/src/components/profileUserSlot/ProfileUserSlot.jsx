@@ -4,9 +4,9 @@ import './profileUserSlot.css';
 export default function ProfileUserSlot({summoner}) {
   return (
     <div className='profileUserSlot'>
-        <img  width="100" height="100" src={`http://ddragon.leagueoflegends.com/cdn/11.23.1/img/profileicon/${summoner.profileIconId}.png`} alt='' /> 
-        <span>{summoner.name}</span>
-        <span>{summoner.summonerLevel}</span>
+        <img  className='profileImg' src={`http://ddragon.leagueoflegends.com/cdn/11.23.1/img/profileicon/${summoner.profileIconId}.png`} alt='' /> 
+        <span className='summonerNameSpan'>{summoner.name}</span>
+        <span className='summonerLevelSpan'>{summoner.summonerLevel}</span>
     </div>
   )
 } 

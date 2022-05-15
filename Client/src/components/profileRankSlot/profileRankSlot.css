@@ -1,0 +1,35 @@
+.profileRankSlot{
+    width: 325px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    background-color: #F05454;
+}
+.part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.playerRankImg{
+    width: 125px;
+    height: 125px;
+}
+.rankDivision{
+    font-size: 50px;
+    margin-top: -15px;
+}
+.summonerWinLose, .summonerWinrate{
+    font-size: 25px;
+}
