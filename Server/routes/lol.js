@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const axios = require('axios');
+const axios = require('axios'); 
 
 const key='RGAPI-136fe2e6-6c8b-40f6-ba7a-07871b2d44b6'; 
  
@@ -7,6 +7,8 @@ const key='RGAPI-136fe2e6-6c8b-40f6-ba7a-07871b2d44b6';
 router.get('/summoner/:summonerName', async(req,res)=>{ 
   try{
     const summonerName = req.params.summonerName; 
+    const platform = '';
+    const region = '';
     const summoner = await axios.get(`https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${key}`);
     const {id, profileIconId, summonerLevel, puuid, name} = summoner.data;
     const matchList = await axios.get(`https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=5&api_key=${key}`);
