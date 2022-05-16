@@ -8,13 +8,15 @@ export default function Home() {
         e.preventDefault();
         try{
             window.location.replace(`/summoner/${summoner}`);
-        }catch(err){
+        }catch(err){ 
             console.log("Home submit error=>",err);
         }
       };
     return (
         <div className='home'>
-             <img src={`https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/League_of_Legends_2019_vector.svg/1280px-League_of_Legends_2019_vector.svg.png`} alt="" className="leagueLogoImg" />
+                <div className='homePageTitleDiv'>
+                    <span className='homePageTitleSpan'>League of Legends Summoner Search</span>
+                </div>
                 <div className="formContainer">
                     <form className='searchForm' onSubmit={handleSubmit}>
                         <select id="standard-select">

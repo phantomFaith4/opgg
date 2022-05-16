@@ -78,3 +78,15 @@ select:focus + .focus {
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
+
+.homePageTitleDiv{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.homePageTitleSpan{
+    color: goldenrod;
+    font-size: 60px;
+    width: 500px;
+}

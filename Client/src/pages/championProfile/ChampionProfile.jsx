@@ -25,96 +25,98 @@ export default function ChampionProfile() {
     },[path]);
     return (  
         <div className='championProfile'>
-            <div className='championProfileSlot'>
-                <div className='gradientDiv'>
-                    <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`} alt="" className="championImgProfile" />
+            <div className='firstPartPage'> 
+                <div className='championProfileSlot'>
+                    <div className='gradientDiv'>
+                        <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`} alt="" className="championImgProfile" />
+                    </div>
+                    <div className='championProfileInfo'>
+                        <table className='championInfoTable'>
+                            <thead>
+                                <tr>
+                                    <th colSpan="2">
+                                    <span>{champion.name}</span>
+                                    <span>{ champion.title}</span>
+                                    </th>
+                                </tr>
+                            </thead> 
+                            <tbody>
+                                <tr>
+                                    <td className='tableElement'>
+                                    {(() => {
+                                        switch (type) {
+                                            case 'Assassin':
+                                                return (
+                                                    <>
+                                                    <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-assassin.png').default} alt="" className="championProfileTypeImg" />
+                                                    <span>Assassin</span>
+                                                    </>
+                                                )
+                                            case 'Fighter':
+                                                return (
+                                                    <>
+                                                    <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-fighter.png').default} alt="" className="championProfileTypeImg" />
+                                                    <span>Fighter</span>
+                                                    </>
+                                                )
+                                            case 'Mage': 
+                                                return (
+                                                    <>
+                                                    <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-mage.png').default} alt="" className="championProfileTypeImg" />
+                                                    <span>Mage</span>
+                                                    </>
+                                                )
+                                            case 'Marksman':
+                                                return (
+                                                    <>
+                                                    <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-marksman.png').default} alt="" className="championProfileTypeImg" />
+                                                    <span>Marksman</span>
+                                                    </>
+                                                )
+                                            case 'Support':
+                                                return (
+                                                    <>
+                                                    <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-support.png').default} alt="" className="championProfileTypeImg" />
+                                                    <span>Support</span>
+                                                    </>
+                                                )
+                                            case 'Tank':
+                                                return (
+                                                    <>
+                                                    <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-tank.png').default} alt="" className="championProfileTypeImg" />
+                                                    <span>Tank</span>
+                                                    </>
+                                                )
+                                            default:
+                                                return (
+                                                    <span>Role is not determined</span> 
+                                                )
+                                        } 
+                                    })()}
+                                    </td>
+                                    <td>
+                                    {(() => {
+                                        if(difficulty >= 0 && difficulty < 3){
+                                            return(<><i className="difficultyIcon fas fa-circle" style={{color:"#5584AC"}}></i><span>A</span></>)
+                                        }else if(difficulty >= 3 && difficulty < 5){
+                                            return(<><i className="difficultyIcon fas fa-circle"  style={{color:"#95CD41"}}></i><span>B</span></>)
+                                        }
+                                        else if(difficulty >= 5 && difficulty < 7){
+                                            return(<><i className="difficultyIcon fas fa-circle"  style={{color:"#EBE645"}}></i><span>C</span></>)
+                                        }
+                                        else if(difficulty >= 7 && difficulty <= 10){
+                                            return(<><i className="difficultyIcon fas fa-circle"  style={{color:"#6E3CBC"}}></i><span>D</span> </>)
+                                        }
+                                    })()}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div className='championProfileInfo'>
-                    <table className='championInfoTable'>
-                        <thead>
-                            <tr>
-                                <th colSpan="2">
-                                   <span>{champion.name}</span>
-                                   <span>{ champion.title}</span>
-                                </th>
-                            </tr>
-                        </thead> 
-                        <tbody>
-                            <tr>
-                                <td className='tableElement'>
-                                {(() => {
-                                    switch (type) {
-                                        case 'Assassin':
-                                            return (
-                                                <>
-                                                <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-assassin.png').default} alt="" className="championProfileTypeImg" />
-                                                <span>Assassin</span>
-                                                </>
-                                            )
-                                        case 'Fighter':
-                                            return (
-                                                <>
-                                                <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-fighter.png').default} alt="" className="championProfileTypeImg" />
-                                                <span>Fighter</span>
-                                                </>
-                                            )
-                                        case 'Mage': 
-                                            return (
-                                                <>
-                                                <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-mage.png').default} alt="" className="championProfileTypeImg" />
-                                                <span>Mage</span>
-                                                </>
-                                            )
-                                        case 'Marksman':
-                                            return (
-                                                <>
-                                                <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-marksman.png').default} alt="" className="championProfileTypeImg" />
-                                                <span>Marksman</span>
-                                                </>
-                                            )
-                                        case 'Support':
-                                            return (
-                                                <>
-                                                <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-support.png').default} alt="" className="championProfileTypeImg" />
-                                                <span>Support</span>
-                                                </>
-                                            )
-                                        case 'Tank':
-                                            return (
-                                                <>
-                                                <img src={require('../../assets/icons/champion_type/npe-ft-role-icon-tank.png').default} alt="" className="championProfileTypeImg" />
-                                                <span>Tank</span>
-                                                </>
-                                            )
-                                        default:
-                                            return (
-                                                <span>Role is not determined</span> 
-                                            )
-                                    } 
-                                })()}
-                                </td>
-                                <td>
-                                {(() => {
-                                    if(difficulty >= 0 && difficulty < 3){
-                                        return(<><i className="difficultyIcon fas fa-circle" style={{color:"#5584AC"}}></i><span>A</span></>)
-                                    }else if(difficulty >= 3 && difficulty < 5){
-                                        return(<><i className="difficultyIcon fas fa-circle"  style={{color:"#95CD41"}}></i><span>B</span></>)
-                                    }
-                                    else if(difficulty >= 5 && difficulty < 7){
-                                        return(<><i className="difficultyIcon fas fa-circle"  style={{color:"#EBE645"}}></i><span>C</span></>)
-                                    }
-                                    else if(difficulty >= 7 && difficulty <= 10){
-                                        return(<><i className="difficultyIcon fas fa-circle"  style={{color:"#6E3CBC"}}></i><span>D</span> </>)
-                                    }
-                                })()}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <SummonerSpells />
+                <WinrateSlot champion={champion.name} />
             </div>
-            <SummonerSpells />
-            <WinrateSlot champion={champion.name} />
             <RuneSlot champion={champion.id}/>
             <SkillOrder champion={champion.id} />
             <div className='aboutChamp'>

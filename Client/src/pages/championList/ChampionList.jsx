@@ -38,10 +38,6 @@ export default function ChampionList() {
 
         }
     }
-    //console.log(type); 
-    //console.log(difficulty); 
-    //console.log(search);
-    //console.log("LIST=>",championList);
     return ( 
         <div className="championList">
             <div className="textContainer">
@@ -58,7 +54,7 @@ export default function ChampionList() {
                 <div className="searchChampionType">
                     <div className="dropdownWrapper">  
                         <span className="dropdown"> 
-                            <div className="dropbtn"> <span className="d-inline" onClick={() =>setTypeFunction("all")}><i className="fas fa-asterisk"></i>Any class</span></div>
+                            <div className="dropbtn"> <span className="d-inline" onClick={() =>setTypeFunction("all")}><i className="fas fa-asterisk"></i> Any class</span></div>
                             <div className="dropdown-content">
                                 <div className="dropdown-element"> 
                                     <span className="d-inline btn float-right">
