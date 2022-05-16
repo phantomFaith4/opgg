@@ -20,11 +20,16 @@
 .searchField{
     width: 90%;
     height: 50px;
+    font-size: 23px;
+    padding-left: 15px;
 }
 .searchBtn{
-    width: 70px;
+    width: 150px;
     height: 50px;
     background-color: #F05454;
+    font-size: 23px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .searchBtn:hover{
     background-color: #f03939;
@@ -47,7 +52,7 @@ select {
     cursor: inherit;
     line-height: inherit;
     height: 50px;
-    width: 85px;
+    width: 150px;
 }
 .select {
     display: grid;
@@ -67,4 +72,9 @@ select:focus + .focus {
     bottom: -1px;
     border: 2px solid var(--select-focus);
     border-radius: inherit;
+}
+#standard-select{
+    font-size: 23px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }

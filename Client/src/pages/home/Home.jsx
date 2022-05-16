@@ -18,11 +18,11 @@ export default function Home() {
                 <div className="formContainer">
                     <form className='searchForm' onSubmit={handleSubmit}>
                         <select id="standard-select">
-                            <option value="Option 1">EUNE</option>
-                            <option value="Option 2">EUW</option>
-                            <option value="Option 3">NA</option>
+                            <option className='option' value="Option 1">EUNE</option>
+                            <option  className='option' value="Option 2">EUW</option>
+                            <option  className='option' value="Option 3">NA</option>
                         </select>
-                        <input type="search" onChange={(e)=>setSummoner(e.target.value)} className='searchField' placeholder='Type summoner name'/>
+                        <input type="search" onChange={(e)=>setSummoner(e.target.value)} className='searchField' placeholder='Summoner name'/>
                         <button type="submit" className='searchBtn'>Search</button>
                     </form>
                 </div>

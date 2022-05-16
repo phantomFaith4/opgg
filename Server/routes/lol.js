@@ -1,10 +1,11 @@
 const router = require("express").Router();
 const axios = require('axios');
 
-const key='RGAPI-2499af3a-5b45-4ec8-a541-2d9ee858c6b5'; 
-
+const key='RGAPI-136fe2e6-6c8b-40f6-ba7a-07871b2d44b6'; 
+ 
 
 router.get('/summoner/:summonerName', async(req,res)=>{ 
+  try{
     const summonerName = req.params.summonerName; 
     const summoner = await axios.get(`https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${key}`);
     const {id, profileIconId, summonerLevel, puuid, name} = summoner.data;
@@ -34,7 +35,9 @@ router.get('/summoner/:summonerName', async(req,res)=>{
       queueType,
       arr,
     });
-    
+  }catch(err){
+    res.status(404).json(err);
+  } 
 });
 
 module.exports = router;
