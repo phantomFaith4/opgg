@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const express  = require('express');
 const {json} = require('express');
 const lolRoute = require('./routes/lol');

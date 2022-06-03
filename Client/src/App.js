@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/champions" element={<ChampionList />} />
           <Route path="/champion/:championId" element={<ChampionProfile />} />  
-          <Route path="/summoner/:summonerName" element={<UserProfile />} />
+          <Route path="/summoner/:summonerName/:platform/:region" element={<UserProfile />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="*" element={<ErrorPage />}/> 
         </Routes>

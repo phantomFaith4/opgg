@@ -15,7 +15,7 @@ export default function Home() {
         e.preventDefault();
         setRegionF();
         try{
-            window.location.replace(`/summoner/${summoner}`);
+            window.location.replace(`/summoner/${summoner}/${platform}/${region}`);
         }catch(err){ 
             console.log("Home submit error=>",err);
         }

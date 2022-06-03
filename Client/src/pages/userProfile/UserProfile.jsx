@@ -12,14 +12,19 @@ import LoadingComponent from '../../components/loadingComponent/LoadingComponent
 export default function UserProfile() {
     const navigate = useNavigate();
     const location = useLocation();
-    const path = location.pathname.split("/")[2]; 
+    const path = location.pathname.split("/")[2];
+    const platform = location.pathname.split("/")[3];
+    const region = location.pathname.split("/")[4]; 
     const [summoner,setSummoner] = useState([]);
     const [matchList,setMatchList] = useState([]);
     const [loading, setLoading] = useState(false);
     useEffect(()=>{
         const fetch = async () =>{
           try{
-            const res = await axios.get(`/summoner/${path}`,); 
+            const res = await axios.get(`/summoner/${path}/${platform}/${region}`,{
+              platform:platform,
+              region:region,
+            }); 
             setSummoner(res.data);
             setMatchList(res.data.arr);  
             setLoading(true);
