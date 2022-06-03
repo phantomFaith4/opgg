@@ -8,8 +8,6 @@ router.get('/summoner/:summonerName/:platform/:region', async(req,res)=>{
     const summonerName = req.params.summonerName; 
     const platform = req.params.platform;
     const region = req.params.region;
-    console.log("platform=>",platform);
-    console.log("region=>",region);
     const summoner = await axios.get(`https://${platform}.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${process.env.API_KEY}`);
     const {id, profileIconId, summonerLevel, puuid, name} = summoner.data;
     const matchList = await axios.get(`https://${region}.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=5&api_key=${process.env.API_KEY}`);

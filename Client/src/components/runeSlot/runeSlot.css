@@ -1,7 +1,7 @@
 .runeSlot{
     border: 2px solid black;
     border-radius: 15px;
-    width:  100%;
+    width:  95%;
     height: 500px;
     margin-top: 50px;
 }
@@ -48,6 +48,7 @@
 .leftRuneTable{
     width: 75%;
 }
+
 .rightRuneTable{
 }
 .runeTitleDiv{
@@ -64,6 +65,8 @@
     width: 150px;
 }
 .specialRuneTd{
-    border: 2px solid red;
    
+}
+.secondRuneRow{
+    margin-left: 100px;
 }

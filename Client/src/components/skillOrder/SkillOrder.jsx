@@ -5,11 +5,11 @@ import axios from 'axios';
 import ReactTooltip from 'react-tooltip';
 
 export default function SkillOrder({champion}) {
-    const [q,setQ] = useState([]);
-    const [w,setW] = useState([]);
-    const [e,setE] = useState([]);
-    const [r,setR] = useState([]);
-    const [p,setP] = useState([]); 
+    const [q,setQ] = useState({});
+    const [w,setW] = useState({});
+    const [e,setE] = useState({});
+    const [r,setR] = useState({});
+    const [p,setP] = useState({}); 
     const [pimg,setPimg] = useState([]);
     const path = champion;
     useEffect(()=>{

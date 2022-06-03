@@ -25,7 +25,7 @@ export default function RuneSlot({champion}) {
                                 <img src={`https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png`} alt='' className='runeImgMain' />
                             </td>
                         </tr>
-                        <tr>
+                        <tr className='secondRuneRow'>
                             <td className='runeTableData'>
                                 <img src={`https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/CheapShot/CheapShot.png`} alt='' className='runeImg' />
                             </td>
@@ -36,7 +36,7 @@ export default function RuneSlot({champion}) {
                                 <img src={`https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png`} alt='' className='runeImg' />
                             </td>
                         </tr>
-                        <tr>
+                        <tr className='thirdRuneRow'>
                             <td className='runeTableData'>
                                 <img src={`https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/ZombieWard/ZombieWard.png`} alt='' className='runeImg' />
                             </td>
