@@ -25,17 +25,17 @@ export default function Home() {
                 <div className='homePageTitleDiv'>
                     <span className='homePageTitleSpan'>League of Legends Summoner Search</span>
                 </div>
-                <div className="formContainer">
-                    <form className='searchForm' onSubmit={handleSubmit}>
-                        <select id="standard-select" onChange={(e)=>setRegionF(e.target.value)}>
-                            <option className='option' value="eun1">EUNE</option>
-                            <option  className='option' value="euw1">EUW</option>
-                            <option  className='option' value="na1">NA</option>
-                        </select>
-                        <input type="search" onChange={(e)=>setSummoner(e.target.value)} className='searchField' placeholder='Summoner name'/>
-                        <button type="submit" className='searchBtn'>Search</button>
-                    </form>
-                </div>
+                <form className='searchForm' onSubmit={handleSubmit}>
+                    <div className="formContainer">
+                            <select id="standard-select" onChange={(e)=>setRegionF(e.target.value)}>
+                                <option className='option' value="eun1">EUNE</option>
+                                <option  className='option' value="euw1">EUW</option>
+                                <option  className='option' value="na1">NA</option>
+                            </select>
+                            <input type="search" onChange={(e)=>setSummoner(e.target.value)} className='searchField' placeholder='Summoner name'/>
+                            <button type="submit" className='searchBtn'>Search</button>
+                    </div>
+                </form>
         </div>
     )
 }
