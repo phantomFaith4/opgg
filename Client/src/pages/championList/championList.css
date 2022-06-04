@@ -17,6 +17,11 @@ body{
         justify-content: center;
         flex-wrap: wrap;
     }
+    .searchField{
+        flex:1;
+        margin: 10px;
+        margin-bottom: 10px;
+    }
 }
 .filterContainer{
     display: flex;
@@ -121,6 +126,7 @@ body{
     flex-direction: row;
     flex-flow: row;
     margin: 10px;
+    margin-left: 20px;
 }
 .difficultyButton{
     width: 50px;
@@ -159,6 +165,7 @@ body{
     align-items: center;
     flex: 1;
     margin: 10px;
+    margin-left: 20px;
 }
 .textContainer{
     font-family: 'Work Sans', sans-serif;
@@ -170,5 +177,4 @@ body{
 .searchField{
     flex:1;
     margin: 10px;
-    margin-left: -1%;
 }

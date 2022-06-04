@@ -29,10 +29,10 @@
 }
 .championProfileInfo{
     position: absolute; 
-    top: calc(40% - 24px);
+    top: 35%;
     left: 45px;
     text-align: center; 
-    width: 300px; 
+    width: 300px;
 }
 .championImgProfile{
     border-radius: 20px;
@@ -73,6 +73,24 @@
 }
 .firstPartHolderDiv{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+}
+@media only screen and (max-width: 900px) {
+    .firstPartPage{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+    }
+    .championProfileInfo{
+        position: absolute; 
+        top: 85%;
+        left: 35%;
+        text-align: center; 
+        width: 300px;
+    }
+    .championProfileSlot{
+        margin-bottom: 25px;
+    }
 }

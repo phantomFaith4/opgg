@@ -10,7 +10,7 @@ ul {
     float: left;
   }
   
-  li span {
+  li > span {
     display: block;
     color: #121212;
     text-align: center;
@@ -19,4 +19,9 @@ ul {
     cursor: pointer;
     font-size: 20px;
     font:bold;
+  }
+  li > span:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    color: black;
   }

@@ -7,6 +7,7 @@ select {
     line-height: inherit;
     height: 50px;
     width: 150px;
+    cursor: pointer;
 }
 .select {
     display: grid;

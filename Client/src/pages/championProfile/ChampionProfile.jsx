@@ -30,7 +30,7 @@ export default function ChampionProfile() {
         <div className='championProfile'>
             {
                 loading ? (
-                <div>
+                <div className='div'>
                     <div className='firstPartHolderDiv'>
                         <div className='firstPartPage'> 
                             <div className='championProfileSlot'>
