@@ -7,10 +7,11 @@ export default function Topbar() {
         <div className="topbar">
             <div className="container">
                 <nav className="navbar">
-                    <ul> 
-                        <Link to="/"><li><span>Home</span></li></Link>
-                        <Link to="/champions"><li><span>Champions</span></li></Link>
-                        <li><span>Leaderboards</span></li>
+                    <ul className='topbarNavList'> 
+                        <Link to="/"><li className='topbarNavListItem'><span>Home</span></li></Link>
+                        <Link to="/champions"><li className='topbarNavListItem'><span>Champions</span></li></Link>
+                        <li className='topbarNavListItem'><span>Leaderboards</span></li>
+                        <li className='topbarNavListItem'><span>Tier List</span></li>
                     </ul>
                 </nav>
             </div>

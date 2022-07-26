@@ -11,7 +11,7 @@ ul {
   }
   
   li > span {
-    display: block;
+    display: block; 
     color: #121212;
     text-align: center;
     padding: 14px 16px;
